@@ -47,5 +47,5 @@ Author Information
 [Ever Proven]
 
 [Oracle JDK]: https://en.wikipedia.org/wiki/Java_Development_Kit
-[Apache License 2.0]: https://github.com/everproven/ansible-ntp/blob/master/LICENSE
+[Apache License 2.0]: https://github.com/everproven/ansible-jdk/blob/master/LICENSE
 [Ever Proven]: https://github.com/everproven
