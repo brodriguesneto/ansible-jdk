@@ -1,0 +1,51 @@
+jdk
+===
+
+An Ansible role that installs [Oracle JDK].
+
+Platforms
+---------
+
+Role tested on Linux operating systems:
+
+* Ubuntu Server 16.04 LTS
+
+Requirements
+------------
+
+None.
+
+Role Variables
+--------------
+
+None.
+
+Dependencies
+------------
+
+None.
+
+Example Playbook
+----------------
+
+```YAML
+---
+- hosts: all
+  become: True
+  roles:
+    - role: everproven.jdk
+```
+
+License
+-------
+
+[Apache License 2.0]
+
+Author Information
+------------------
+
+[Ever Proven]
+
+[Oracle JDK]: https://en.wikipedia.org/wiki/Java_Development_Kit
+[Apache License 2.0]: https://github.com/everproven/ansible-ntp/blob/master/LICENSE
+[Ever Proven]: https://github.com/everproven

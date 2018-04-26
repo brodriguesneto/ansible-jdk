@@ -1,0 +1,17 @@
+---
+sudo: required
+dist: trusty
+language: python
+python:
+  - "3.6"
+before_install:
+  - deactivate
+  - sudo apt-get update
+  - sudo apt-get -y install vagrant virtualbox
+  - pip install ansible
+script:
+  - cd tests
+  - ./test.sh
+notifications:
+  webhooks: 
+    - https://galaxy.ansible.com/api/v1/notifications/

@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Boaventura Rodrigues Neto
+  description: An Ansible role that installs Oracle JDK
+  company: Ever Proven
+  license: Apache License 2.0
+  min_ansible_version: 2.5
+  platforms:
+  - name: Ubuntu
+    versions:
+      - xenial
+  galaxy_tags:
+    - java
+    - development
+dependencies: []

@@ -1,0 +1,19 @@
+- name: Install requirements
+  apt: 
+    name : software-properties-common
+    update_cache: yes
+
+- name: Add WebUpd8 team Oracle Java PPA
+  apt_repository:
+    repo: 'ppa:webupd8team/java'
+    update_cache: yes
+
+- name: Accepted Oracle license
+  script: "scripts/license.sh"
+
+- name: Install Oracle JDK 1.8
+  apt:
+    name: "{{ item }}"
+  loop:
+    - oracle-java8-set-default
+    - oracle-java8-installer
