@@ -1,5 +1,5 @@
 ---
-- name: Build containers
+- name: Create containers inventory group
   hosts: localhost
   become: false
   gather_facts: false
