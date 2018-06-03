@@ -1,5 +1,6 @@
 jdk
 ===
+
 [![Build Status](https://travis-ci.org/everproven/ansible-jdk.svg?branch=master)](https://travis-ci.org/everproven/ansible-jdk)
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-everproven.jdk-blue.svg)](https://galaxy.ansible.com/everproven/jdk/)
 
