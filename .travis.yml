@@ -11,7 +11,7 @@ python:
 
 before_install:
   - deactivate
-  - pip install ansible=="2.5.4" docker-py
+  - sudo -H pip install ansible=="2.5.4" docker-py
 
 script:
   - cd tests/travis
