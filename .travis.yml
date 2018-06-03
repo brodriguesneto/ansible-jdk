@@ -13,8 +13,10 @@ before_install:
   - deactivate
   - sudo -H pip install ansible=="2.5.4" docker-py
 
-script:
+before_script:
   - cd tests/travis
+
+script:
   - ansible-playbook test.yml --syntax-check
   - ansible-playbook test.yml
   - ansible-playbook test.yml > ansible_run.out
