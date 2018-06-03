@@ -1,17 +1,25 @@
 ---
-sudo: required
 dist: trusty
+sudo: required
+
+services:
+  - docker
+
 language: python
 python:
   - "3.6"
+
 before_install:
   - deactivate
-  - sudo apt-get update
-  - sudo apt-get -y install vagrant virtualbox
-  - pip install ansible
+  - pip install ansible=="2.5.4" docker-py
+
 script:
-  - cd tests
-  - ./test.sh
+  - cd tests/travis
+  - ansible-playbook test.yml --syntax-check
+  - ansible-playbook test.yml
+  - ansible-playbook test.yml > ansible_run.out
+  - ./idempotence.sh ansible_run.out
+
 notifications:
   webhooks: 
     - https://galaxy.ansible.com/api/v1/notifications/

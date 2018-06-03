@@ -1,13 +1,14 @@
 jdk
 ===
 
-An Ansible role that installs [Oracle JDK].
+An Ansible role that installs [Oracle JDK] 1.8.
 
 Platforms
 ---------
 
 Role tested on Linux operating systems:
 
+* Ubuntu Server 18.04 LTS
 * Ubuntu Server 16.04 LTS
 
 Requirements
