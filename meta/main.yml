@@ -4,7 +4,6 @@ galaxy_info:
   description: An Ansible role that installs Oracle JDK
   company: Ever Proven
   license: Apache License 2.0
-  github_branch: release
   min_ansible_version: 2.5
   platforms:
   - name: Ubuntu
