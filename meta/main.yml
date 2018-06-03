@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: Boaventura Rodrigues Neto
-  description: An Ansible role that installs Oracle JDK
+  description: An Ansible role that installs Oracle JDK 1.8
   company: Ever Proven
   license: Apache License 2.0
   min_ansible_version: 2.5

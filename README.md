@@ -1,5 +1,6 @@
 jdk
 ===
+[![Build Status](https://travis-ci.org/everproven/ansible-jdk.svg?branch=master)](https://travis-ci.org/everproven/ansible-jdk)
 
 An Ansible role that installs [Oracle JDK] 1.8.
 
