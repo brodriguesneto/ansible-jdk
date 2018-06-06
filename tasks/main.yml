@@ -4,6 +4,7 @@
     update_cache: yes
   loop:
     - software-properties-common
+    - apt-transport-https
     - debconf-utils
     - debconf
     - gnupg
