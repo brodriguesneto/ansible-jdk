@@ -20,8 +20,10 @@
     - name: Run docker containers
       docker_container:
         name: "{{ item }}"
+        hostname: "{{ item }}"
         image: "{{ item }}"
         command: "/sbin/init"
+        recreate: yes
         state: started
         privileged: true
       loop: "{{ containers }}"
@@ -40,4 +42,4 @@
   hosts: containers
   become: True
   roles:
-    - role: ansible-jdk
+    - role: everproven.jdk
