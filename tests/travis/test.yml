@@ -13,7 +13,7 @@
         name: "{{ item }}"
         tag: latest
         path: "containers/{{ item }}"
-        force: true
+        force: false
       changed_when: false
       loop: "{{ containers }}"
 
