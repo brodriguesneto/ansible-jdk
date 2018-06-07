@@ -23,7 +23,7 @@
         hostname: "{{ item }}"
         image: "{{ item }}"
         command: "/sbin/init"
-        recreate: yes
+        recreate: no
         state: started
         privileged: true
       loop: "{{ containers }}"
