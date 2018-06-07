@@ -42,4 +42,4 @@
   hosts: containers
   become: True
   roles:
-    - role: everproven.jdk
+    - role: ansible-jdk
