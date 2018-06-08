@@ -24,6 +24,7 @@
 - name: Install Oracle JDK 1.8
   apt:
     name: "{{ item }}"
+  ignore_errors: "{{ ansible_check_mode }}"
   loop:
     - oracle-java8-set-default
     - oracle-java8-installer

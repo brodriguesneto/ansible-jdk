@@ -4,7 +4,7 @@
   become: false
   gather_facts: false
   vars:
-    containers:
+    container_list:
       - xenial
       - bionic
   tasks:
@@ -14,8 +14,8 @@
         tag: latest
         path: "containers/{{ item }}"
         force: false
-      changed_when: false
-      loop: "{{ containers }}"
+      check_mode: False
+      loop: "{{ container_list }}"
 
     - name: Run docker containers
       docker_container:
@@ -26,7 +26,8 @@
         recreate: no
         state: started
         privileged: true
-      loop: "{{ containers }}"
+      check_mode: False
+      loop: "{{ container_list }}"
 
     - name: Create inventory group on-the-fly
       add_host:
@@ -35,8 +36,9 @@
         ansible_user: root
         ansible_python_interpreter: python
         groups: containers
-      changed_when: false
-      loop: "{{ containers }}"
+      check_mode: False
+      changed_when: False
+      loop: "{{ container_list }}"
 
 - name: Run jdk play
   hosts: containers
