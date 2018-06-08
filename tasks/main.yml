@@ -13,6 +13,7 @@
 - name: Add WebUpd8 team Oracle Java PPA
   apt_repository:
     repo: 'ppa:webupd8team/java'
+    state: present
     update_cache: yes
 
 - name: Accept Oracle license
